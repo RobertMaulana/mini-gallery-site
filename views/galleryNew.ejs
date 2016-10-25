@@ -1,0 +1,23 @@
+<% include partials/header %>
+
+<div class='container'>
+	<div class='row'>
+		<h3 class='text-center'>Add new gallery</h3>
+		<div style='width:30%; margin:30px auto;'>
+			<form action='/gallery' method='post'>
+				<div class='form-group'>
+					<input class='form-control' type='text' name='name' placeholder='Caption'>
+				</div>
+				<div class='form-group'>
+					<input class='form-control' type='text' name='img' placeholder='Img link'>
+				</div>
+				<div class='form-group'>
+					<button class='btn btn-lg btn-primary btn-block'>Save</button>
+				</div>
+			</form>
+			<a href='/gallery'>Back</a>
+		</div>
+	</div>
+</div>
+
+<% include partials/footer %>

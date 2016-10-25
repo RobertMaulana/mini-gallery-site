@@ -1,0 +1,26 @@
+<% include partials/header %>
+
+<div class='container'>
+	<header class='jumbotron'>
+		<h1>Welcome to my Gallery</h1>
+		<p>
+			<a class='btn btn-primary btn-large' href='/gallery/new'>Add new Gallery</a>
+		</p>
+	</header>
+
+	<div class='row'>
+		<% gallery.forEach(function(galeries){ %>
+			<div class='col-md-3 col-sm-6'>
+				<div class='thumbnail'>
+					<img src='<%= galeries.img%>'>
+					<div class='caption text-center'>
+						<p><%= galeries.name%></p>
+					</div>
+				</div>
+				
+			</div>		
+		<% }); %>
+	</div>
+</div>
+
+<% include partials/footer %>
